@@ -1,0 +1,13 @@
+<form (submit)="onSubmit()">
+  <div>
+    <label for="foodName">Food Name:</label>
+    <input id="foodName" [(ngModel)]="foodName" name="foodName" placeholder="Food Name" required />
+  </div>
+
+  <div>
+    <label for="calories">Calories:</label>
+    <input id="calories" [(ngModel)]="calories" name="calories" type="number" placeholder="Calories" required />
+  </div>
+
+  <button type="submit">Add Calorie Entry</button>
+</form>
